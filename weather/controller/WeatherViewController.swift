@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  weather
 //
-//  Created by 1418972 on 18/03/21.
+//  Created by Guhan on 18/03/21.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import CoreLocation
 
 class WeatherViewController: UIViewController {
     
-
+    
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!

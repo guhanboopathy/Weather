@@ -2,7 +2,7 @@
 //  weatherManager.swift
 //  weather
 //
-//  Created by 1418972 on 19/03/21.
+//  Created by Guhan on 19/03/21.
 //
 
 import Foundation
@@ -37,7 +37,6 @@ struct WeatherManager {
                 if let safeData = data {
                     if let weather = parseJson(safeData) {
                         delegate?.didUpdateWeather(self, weather)
-                        
                         
                     }
                 }
