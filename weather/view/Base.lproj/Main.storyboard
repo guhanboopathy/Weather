@@ -36,6 +36,9 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="currentLocationBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOD-Zz-Hy1"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="6bE-Fg-TCu">
                                                 <rect key="frame" x="50" y="0.0" width="274" height="40"/>
@@ -85,14 +88,14 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyS-8h-Z7I">
-                                        <rect key="frame" x="276" y="309.5" width="98" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyS-8h-Z7I">
+                                        <rect key="frame" x="324" y="309.5" width="50" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TY2-LX-Wlx">
-                                        <rect key="frame" x="135" y="355.5" width="239" height="462.5"/>
+                                        <rect key="frame" x="135" y="369.5" width="239" height="448.5"/>
                                     </view>
                                 </subviews>
                                 <constraints>
