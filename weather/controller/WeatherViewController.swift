@@ -15,7 +15,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var cityLabel: UILabel!
-    let location = CLLocationManager()
+    let locationManager = CLLocationManager()
     
     var weathermanager = WeatherManager()
     override func viewDidLoad() {
@@ -25,9 +25,9 @@ class WeatherViewController: UIViewController {
     }
     
     @IBAction func currentLocationBtnTapped(_ sender: Any) {
-        location.delegate = self
-        location.requestWhenInUseAuthorization()
-        location.requestLocation()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
         
     }
     
@@ -41,6 +41,7 @@ extension WeatherViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
+            locationManager.stopUpdatingLocation()
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
             weathermanager.createWeatherURL(latitude: lat, longitude: lon)
