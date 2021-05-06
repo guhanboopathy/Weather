@@ -17,7 +17,7 @@ struct WeatherManager {
     var delegate: WeatherManagerDelegate?
     let url = "https://api.openweathermap.org/data/2.5/weather?appid=411217a95ad71a25e19bfa09fb308e06&units=metric"
     
-    func createWeatherURl(cityName: String) {
+    func createWeatherURL(cityName: String) {
         let urlString = "\(url)&q=\(cityName)"
         handleURL(with: urlString)
     }

@@ -71,7 +71,7 @@ extension WeatherViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if let city = textField.text {
-            weathermanager.createWeatherURl(cityName: city)
+            weathermanager.createWeatherURL(cityName: city)
         }
     }
 }
