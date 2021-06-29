@@ -15,6 +15,8 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var degreeLabel: UILabel!
+    @IBOutlet weak var celsius: UILabel!
     let locationManager = CLLocationManager()
     
     var weathermanager = WeatherManager()
@@ -86,6 +88,8 @@ extension WeatherViewController: WeatherManagerDelegate {
             self.temperatureLabel.text = weather.temperatureStrig
             self.cityLabel.text = weather.citiName
             self.conditionImageView.image = UIImage(systemName: weather.conditionName)
+            self.celsius.text = "C"
+            self.degreeLabel.text = "°"
         }
     }  
 }
