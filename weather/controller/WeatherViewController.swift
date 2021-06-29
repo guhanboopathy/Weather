@@ -36,7 +36,12 @@ class WeatherViewController: UIViewController {
 extension WeatherViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print(error)
+        print(error.localizedDescription)
+        let alertView = UIAlertController(title: K.alert.error, message: error.localizedDescription, preferredStyle: .alert)
+        alertView.addAction(UIAlertAction(title: K.alert.OKTitle, style: .default, handler: nil))
+        self.present(alertView, animated: true, completion: nil)
+        
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -52,7 +57,15 @@ extension WeatherViewController: CLLocationManagerDelegate {
 extension WeatherViewController: UITextFieldDelegate {
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
-        searchTextField.endEditing(true)
+        // searchTextField.endEditing(true)
+        if searchTextField.text == nil || searchTextField.text == ""{
+            let alertView = UIAlertController(title: "", message: K.alert.cityMessage, preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title:K.alert.OKTitle, style: .default, handler: nil))
+            self.present(alertView, animated: true, completion: nil)
+        }else {
+            searchTextField.endEditing(true)
+        }
+        
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
@@ -79,7 +92,11 @@ extension WeatherViewController: UITextFieldDelegate {
 extension WeatherViewController: WeatherManagerDelegate {
     
     func didFailWithError(_ error: Error) {
-        print(error)
+        DispatchQueue.main.async {
+            let alertView = UIAlertController(title:K.alert.error, message: error.localizedDescription, preferredStyle: .alert)
+            alertView.addAction(UIAlertAction(title: K.alert.OKTitle, style: .default, handler: nil))
+            self.present(alertView, animated: true, completion: nil)
+        }
     }
     
     func didUpdateWeather(_ weathermanager: WeatherManager, _ weather: WeatherModel) {

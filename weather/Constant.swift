@@ -16,4 +16,11 @@ struct K {
     static let sunMax = "sun.max"
     static let cloud = "cloud"
     static let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=411217a95ad71a25e19bfa09fb308e06&units=metric"
+    
+    struct alert {
+        static let error = "Error"
+        static let OKTitle = "OK"
+        static let cityMessage = "Please enter CityName"
+        
+    }
 }
