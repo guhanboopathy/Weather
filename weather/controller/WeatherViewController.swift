@@ -28,9 +28,7 @@ class WeatherViewController: UIViewController {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
-        
     }
-    
 }
 
 extension WeatherViewController: CLLocationManagerDelegate {
@@ -47,7 +45,6 @@ extension WeatherViewController: CLLocationManagerDelegate {
             weathermanager.createWeatherURL(latitude: lat, longitude: lon)
         }
     }
-    
 }
 
 extension WeatherViewController: UITextFieldDelegate {
@@ -60,10 +57,11 @@ extension WeatherViewController: UITextFieldDelegate {
         if textField.text != nil {
             return true
         }else {
-            textField.placeholder = "Type City name"
+            textField.placeholder = K.searchPlaceHolder
             return false
         }
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextField.endEditing(true)
         return true
@@ -89,6 +87,5 @@ extension WeatherViewController: WeatherManagerDelegate {
             self.cityLabel.text = weather.citiName
             self.conditionImageView.image = UIImage(systemName: weather.conditionName)
         }
-    }
-    
+    }  
 }

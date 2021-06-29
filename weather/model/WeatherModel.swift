@@ -19,23 +19,21 @@ struct WeatherModel {
     var conditionName : String {
         switch conditionId {
         case 200...232:
-            return "cloud.bolt"
+            return K.boltWeather
         case 300...321:
-            return "cloud.brizzle"
+            return K.cloudBrizzle
         case 500...531:
-            return "cloud.rain"
+            return K.cloudRain
         case 600...622:
-            return "cloud.snow"
+            return K.cloudSnow
         case 701...781:
-            return "cloud.fog"
+            return K.cloudFog
         case 800:
-            return "sun.max"
+            return K.sunMax
         case 801...804:
-            return "cloud.bolt"
+            return K.boltWeather
         default:
-            return "cloud"
+            return K.cloud
         }
-    }
-    
-    
+    }  
 }

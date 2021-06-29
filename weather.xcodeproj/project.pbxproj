@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48825DBD268AA9BB00DE5C21 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48825DBC268AA9BB00DE5C21 /* Constant.swift */; };
 		489587D5263FD05100C025A0 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489587D4263FD05100C025A0 /* WeatherData.swift */; };
 		489587D82640140D00C025A0 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489587D72640140D00C025A0 /* WeatherModel.swift */; };
 		E4156973260481E4006C5656 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4156972260481E4006C5656 /* WeatherManager.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48825DBC268AA9BB00DE5C21 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		489587D4263FD05100C025A0 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		489587D72640140D00C025A0 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		E4156972260481E4006C5656 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				E4ED24962603385500CC7A6D /* AppDelegate.swift */,
 				E4ED24982603385500CC7A6D /* SceneDelegate.swift */,
+				48825DBC268AA9BB00DE5C21 /* Constant.swift */,
 				E4ED24CC2603388600CC7A6D /* model */,
 				E4ED24CB2603387F00CC7A6D /* controller */,
 				E4ED24CA2603387700CC7A6D /* view */,
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48825DBD268AA9BB00DE5C21 /* Constant.swift in Sources */,
 				E4ED249B2603385500CC7A6D /* WeatherViewController.swift in Sources */,
 				489587D5263FD05100C025A0 /* WeatherData.swift in Sources */,
 				E4ED24972603385500CC7A6D /* AppDelegate.swift in Sources */,
