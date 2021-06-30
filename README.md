@@ -11,8 +11,5 @@ Developed a weather application using swift. Its an online application that used
 
 Screenshots: 
 
-![Simulator Screen Shot - iPhone 11 - 2021-06-29 at 09 34 29](https://user-images.githubusercontent.com/22254867/123781058-6d747a00-d8f1-11eb-8640-ebb8d517997a.png)
-
-![Simulator Screen Shot - iPhone 11 - 2021-06-29 at 09 08 24](https://user-images.githubusercontent.com/22254867/123781216-9bf25500-d8f1-11eb-9fd5-533649504a43.png)
-![Simulator Screen Shot - iPhone 11 - 2021-06-29 at 09 08 55](https://user-images.githubusercontent.com/22254867/123781231-9f85dc00-d8f1-11eb-84a4-7a5be8852d45.png)
+![weatherScreenShots](https://user-images.githubusercontent.com/22254867/123906981-cba56980-d992-11eb-917b-57fc6cd31571.jpg)
 
